@@ -1,0 +1,39 @@
+<div class="practice-information">
+<h3>Join us at our weekly practices!</h3>
+
+{% set day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] %}
+{% for practice in config.extra.practices %}
+
+
+<p>
+    {{ day[practice.day_of_the_week] }}s, 
+    <time datetime="{{ practice.time_of_day[0] }}:{{ practice.time_of_day[1] }}">
+        {% if practice.time_of_day[0] > 12 %}{{ practice.time_of_day[0] - 12 }}{% else %}{{ practice.time_of_day[0] }}{% endif %}:{% if practice.time_of_day[1] < 10 %}0{% endif %}{{ practice.time_of_day[1] }}pm</time> to 
+    <time datetime="{{ practice.time_of_day[0] + practice.length }}:{{ practice.time_of_day[1] }}">{% if practice.time_of_day[0] + practice.length > 12 %}{{ practice.time_of_day[0] + practice.length - 12 }}{% else %}{{ practice.time_of_day[0] + practice.length }}{% endif %}:{% if practice.time_of_day[1] < 10 %}0{% endif %}{{ practice.time_of_day[1] }}pm</time><br />
+    <a href="https://www.google.com/maps/place/{{ practice.location_coords }}">{{ practice.location_name }}</a><br />
+</p>
+<a class="button full" href="#" id="calendar-link-{{ loop.index }}">Add {{ day[practice.day_of_the_week] }} practice to your calendar</a>
+    
+<script>
+    {
+        let startDate = new Date();
+        let endDate = new Date();
+        startDate.setHours({{ practice.time_of_day[0] }}, {{ practice.time_of_day[1] }}, 0, 0);
+        startDate.setDate(startDate.getDate() + ({{ practice.day_of_the_week }} + 7 - startDate.getDay()) % 7);
+        endDate.setDate(startDate.getDate());
+        endDate.setHours({{ practice.time_of_day[0] + practice.length }}, 0, 0, 0);
+    
+        let googleCalLink = new URL("https://calendar.google.com/calendar/r/eventedit");
+        googleCalLink.searchParams.append("text", "Belegarth Practice");
+        googleCalLink.searchParams.append("details", "https://thenorthernsteppes.org");
+        googleCalLink.searchParams.append("dates", startDate.toISOString().replace(/[^\w\s]/gi, '') + "/" + endDate.toISOString().replace(/[^\w\s]/gi, ''));
+        googleCalLink.searchParams.append("location", "{{ practice.location_coords }}");
+        googleCalLink.searchParams.append("recur", "RRULE:FREQ=WEEKLY");
+    
+        document.getElementById("calendar-link-{{ loop.index }}").href = googleCalLink.href;
+    }
+</script>    
+
+{% endfor %}
+
+</div>

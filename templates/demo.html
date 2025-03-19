@@ -1,0 +1,9 @@
+{% extends "page.html" %}
+
+{% block content %}
+
+<div class="demo" id="{{ page.slug }}">
+{{ page.content | safe }}
+</div>
+
+{% endblock content %}
