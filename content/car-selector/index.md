@@ -5,10 +5,6 @@ title = "Car Selector"
 header = true
 +++
 
-<!-- <img src="iracing_series_ui_001.png" /> -->
-
-<!-- <svg viewBox="0 0 16 16" focusable="false" class="icon" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 2C0.25 1.58579 0.585786 1.25 1 1.25C1.91574 1.25 2.73364 1.82288 3.04659 2.68349L3.16168 3H14.6743C15.3386 3 15.8183 3.6359 15.6358 4.27472L14.4144 8.54944C14.1691 9.40804 13.3844 10 12.4914 10H5.70714L6.22611 11.4272C6.40574 11.9212 6.87522 12.25 7.40085 12.25H13C13.4142 12.25 13.75 12.5858 13.75 13C13.75 13.0995 13.7306 13.1945 13.6954 13.2814C13.8832 13.4632 14 13.718 14 14C14 14.5523 13.5523 15 13 15C12.4477 15 12 14.5523 12 14C12 13.9137 12.0109 13.8299 12.0315 13.75H7.40085C7.25099 13.75 7.1032 13.7378 6.9586 13.7143C6.98554 13.8048 7 13.9007 7 14C7 14.5523 6.55228 15 6 15C5.44772 15 5 14.5523 5 14C5 13.5885 5.24856 13.235 5.60373 13.0816C5.25561 12.7812 4.98083 12.3919 4.81642 11.9398L1.6369 3.1961C1.53951 2.92828 1.28498 2.75 1 2.75C0.585786 2.75 0.25 2.41421 0.25 2ZM11.5762 5.48016C11.8414 5.16195 11.7984 4.68903 11.4802 4.42385C11.162 4.15868 10.6891 4.20167 10.4239 4.51988L8.56695 6.74824L8.12412 6.08399C7.89435 5.73935 7.4287 5.64622 7.08405 5.87598C6.73941 6.10575 6.64628 6.5714 6.87604 6.91604L7.5046 7.85887C7.96808 8.5541 8.97003 8.60762 9.50494 7.96573L11.5762 5.48016Z" fill="currentColor"></path></svg> -->
-
 <div class="cards">
 <div class="card info">
     <div class="upper"><img src="card1.png" />
@@ -387,3 +383,25 @@ function update() {
 }
 
 </script>
+
+<div style="display: flex; flex-direction: column; margin-left: auto; margin-right: auto; max-width: 960px; justify-content: space-between; gap: 10px">
+<p>
+I mocked-up some ideas I had around the car "card" on the new official series page. I'm not a huge fan of the rotating car-ousel - I often customize my paint from this screen, and only want to see the car I'm racing with & the current scheme I'm using. The tiny dots you need to click to navigate between the cars are too small & difficult to navigate to find the particular car I'm using/want to look at. The automatic rotation might only make sense if you don't currently own any of the cars.
+</p>
+
+<p>
+The default view isn't that different - just moving the name & class into the card, and separating out the info & paint buttons instead of putting them behind the kabob/more options menu. I think clicking on the car itself here should do something, like bring up the paint UI, car info, or car selection - I would imagine the former scenario might be the most preferred/obvious.
+</p>
+
+<p>
+Once you click on the car's row, the list would animate up & show more information about all the cars competing, highlighting the currently selected one. Clicking the down arrow would return you to the car image view. I think an important thing to show here is the car class - I'm not sure this information is available anywhere else, and it'd be nice to know which cars are in which classes (basically what you're competing against). If only one car class is being raced in this series, I think this information can be omitted in both views.
+</p>
+
+<p>
+Whichever car is selected could be used in the session launch, instead of having to select your car each time.
+</p>
+
+<p>
+The mini car icons would also be nice to have in the rows, but I thought the car class was more important here, especially since the randomly-generated/non-user-selected paints for the non-licensed cars don't really convey much information.
+</p>
+</div>
