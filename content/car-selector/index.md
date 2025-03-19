@@ -62,7 +62,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="lamborghinihuracangt3evo" value="2" />
+            <input hidden="true" type="radio" name="car" id="lamborghinihuracangt3evo" value="3" />
             <label for="lamborghinihuracangt3evo" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="mercedesamgevogt3-small.jpg" />
@@ -75,7 +75,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="porsche992rgt3" value="3" />
+            <input hidden="true" type="radio" name="car" id="porsche992rgt3" value="4" />
             <label for="porsche992rgt3" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="porsche992rgt3-small.jpg" />
@@ -88,7 +88,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="ferrari296gt3" value="4" />
+            <input hidden="true" type="radio" name="car" id="ferrari296gt3" value="5" />
             <label for="ferrari296gt3" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="ferrari296gt3-small.jpg" />
@@ -101,7 +101,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="audir8lmsevo2gt3" value="5" />
+            <input hidden="true" type="radio" name="car" id="audir8lmsevo2gt3" value="6" />
             <label for="audir8lmsevo2gt3" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="audir8lmsevo2gt3-small.jpg" />
@@ -114,7 +114,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="chevyvettez06rgt3" value="6" />
+            <input hidden="true" type="radio" name="car" id="chevyvettez06rgt3" value="7" />
             <label for="chevyvettez06rgt3" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="chevyvettez06rgt3-small.jpg" />
@@ -127,7 +127,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="fordmustanggt3" value="7" />
+            <input hidden="true" type="radio" name="car" id="fordmustanggt3" value="8" />
             <label for="fordmustanggt3" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="fordmustanggt3-small.jpg" />
@@ -140,7 +140,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="mclaren720sgt3" value="8" />
+            <input hidden="true" type="radio" name="car" id="mclaren720sgt3" value="9" />
             <label for="mclaren720sgt3" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="mclaren720sgt3-small.jpg" />
@@ -153,7 +153,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="acuransxevo22gt3" value="9" />
+            <input hidden="true" type="radio" name="car" id="acuransxevo22gt3" value="10" />
             <label for="acuransxevo22gt3" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="acuransxevo22gt3-small.jpg" />
@@ -166,7 +166,7 @@ header = true
                     <div class="class two">IMSA23</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="bmwlmdh" value="10" />
+            <input hidden="true" type="radio" name="car" id="bmwlmdh" value="11" />
             <label for="bmwlmdh" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="bmwlmdh-small.jpg" />
@@ -179,7 +179,7 @@ header = true
                     <div class="class three">GTP</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="cadillacvseriesrgtp" value="11" />
+            <input hidden="true" type="radio" name="car" id="cadillacvseriesrgtp" value="12" />
             <label for="cadillacvseriesrgtp" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="cadillacvseriesrgtp-small.jpg" />
@@ -192,7 +192,7 @@ header = true
                     <div class="class three">GTP</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="acuraarx06gtp" value="12" />
+            <input hidden="true" type="radio" name="car" id="acuraarx06gtp" value="13" />
             <label for="acuraarx06gtp" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="acuraarx06gtp-small.jpg" />
@@ -205,7 +205,7 @@ header = true
                     <div class="class three">GTP</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="porsche963gtp" value="13" />
+            <input hidden="true" type="radio" name="car" id="porsche963gtp" value="14" />
             <label for="porsche963gtp" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="porsche963gtp-small.jpg" />
@@ -218,7 +218,7 @@ header = true
                     <div class="class three">GTP</div>
                 </div>
             </label>
-            <input hidden="true" type="radio" name="car" id="ferrari499p" value="14" />
+            <input hidden="true" type="radio" name="car" id="ferrari499p" value="15" />
             <label for="ferrari499p" class="car" onclick="car_click()">
                 <div class="image">
                     <img src="ferrari499p-small.jpg" />
